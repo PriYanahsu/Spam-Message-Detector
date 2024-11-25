@@ -1,25 +1,25 @@
 # Spam Message Detector - README
 
-### Overview
+## Overview
 The Spam Message Detector is a machine learning project designed to classify messages as spam or not spam. This project uses Jupyter Notebook for training the model and Streamlit for building an interactive web-based frontend for real-time predictions.
 
-### Features
+## Features
 #### Model Training: Train a machine learning model in Jupyter Notebook to classify text messages.
 #### Interactive Interface: Streamlit is used to create a user-friendly interface for predicting whether a message is spam or not.
 #### Simple Deployment: Run the app locally using Streamlit with a single command.
 
-### Technologies Used
+## Technologies Used
 #### 1.Python: Core programming language.
 #### 2.Jupyter Notebook: For exploratory data analysis (EDA), model training, and evaluation.
 #### 3.Streamlit: For building an intuitive web-based frontend.
 
-### Libraries:
+## Libraries:
 #### 1.Pandas: Data manipulation and analysis.
 #### 2.Scikit-learn: Model training and evaluation.
 #### 3.NLTK/Spacy: For text preprocessing (if applicable).
 #### 4.Streamlit: Web app framework.
 
-### Project Structure
+## Project Structure
 
 Spam-Message-Detector/
 │
@@ -30,7 +30,7 @@ Spam-Message-Detector/
 ├── requirements.txt         # List of Python dependencies
 └── README.md                # Project documentation (this file)
 
-### How to Run the Project
+## How to Run the Project
 ### 1. Clone the Repository
 Clone the repository to your local machine:
 
@@ -45,12 +45,12 @@ pip install -r requirements.txt
 ### 3. Train the Model
 If you'd like to retrain the model:
 
-1. Open notebooks/model_training.ipynb in Jupyter Notebook.
-2. Follow the steps in the notebook to:
-   * Load the dataset.
-   * Preprocess the text data.
-   * Train and evaluate the machine learning model.
-3. Save the trained model as model.pkl.
+    1. Open notebooks/model_training.ipynb in Jupyter Notebook.
+    2. Follow the steps in the notebook to:
+        * Load the dataset.
+        * Preprocess the text data.
+        * Train and evaluate the machine learning model.
+    3. Save the trained model as model.pkl.
 
 #### Note: A pre-trained model is already included in the repository.
 
@@ -62,8 +62,8 @@ streamlit run app.py
 ### 5. Open the App in Your Browser
 After running the above command, Streamlit will start a local server and provide a URL. Open the URL in your browser (default: http://localhost:8501).
 
-### Using the App
-#### Input a Message: Enter the text message you want to classify in the input box.
-#### Get Prediction: Click the "Classify" button to see whether the message is spam or not spam.
-#### Real-Time Updates: Make changes or test multiple messages seamlessly.
+## Using the App
+  #### 1.Input a Message: Enter the text message you want to classify in the input box.
+  #### 2.Get Prediction: Click the "Classify" button to see whether the message is spam or not spam.
+  #### 3.Real-Time Updates: Make changes or test multiple messages seamlessly.
 
