@@ -62,3 +62,8 @@ streamlit run app.py
 ### 5. Open the App in Your Browser
 After running the above command, Streamlit will start a local server and provide a URL. Open the URL in your browser (default: http://localhost:8501).
 
+### Using the App
+#### Input a Message: Enter the text message you want to classify in the input box.
+#### Get Prediction: Click the "Classify" button to see whether the message is spam or not spam.
+#### Real-Time Updates: Make changes or test multiple messages seamlessly.
+
