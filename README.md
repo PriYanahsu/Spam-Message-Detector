@@ -21,14 +21,14 @@ The Spam Message Detector is a machine learning project designed to classify mes
 
 ## Project Structure
 
-Spam-Message-Detector/
-│
-├── notebooks/
-│   └── model_training.ipynb  # Jupyter notebook for model training and evaluation
-├── app.py                   # Streamlit app script
-├── model.pkl                # Trained model file (generated after training)
-├── requirements.txt         # List of Python dependencies
-└── README.md                # Project documentation (this file)
+Spam-Message-Detector
+ 
+ notebooks
+     model_training.ipynb  # Jupyter notebook for model training and evaluation
+     app.py                   # Streamlit app script
+     model.pkl                # Trained model file (generated after training)
+     requirements.txt         # List of Python dependencies
+     README.md                # Project documentation (this file)
 
 ## How to Run the Project
 ### 1. Clone the Repository
