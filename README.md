@@ -21,8 +21,6 @@ The Spam Message Detector is a machine learning project designed to classify mes
 
 ### Project Structure
 
-bash
-Copy code
 Spam-Message-Detector/
 │
 ├── notebooks/
@@ -33,18 +31,18 @@ Spam-Message-Detector/
 └── README.md                # Project documentation (this file)
 
 ### How to Run the Project
-#### 1. Clone the Repository
+### 1. Clone the Repository
 Clone the repository to your local machine:
 
 git clone <repository-url>
 cd Spam-Message-Detector
 
-#### 2. Install Dependencies
+### 2. Install Dependencies
 Install the required Python libraries:
 
 pip install -r requirements.txt
 
-#### 3. Train the Model
+### 3. Train the Model
 If you'd like to retrain the model:
 
 1. Open notebooks/model_training.ipynb in Jupyter Notebook.
@@ -56,11 +54,11 @@ If you'd like to retrain the model:
 
 #### Note: A pre-trained model is already included in the repository.
 
-#### 4. Run the Streamlit App
+### 4. Run the Streamlit App
 Run the Streamlit app with the following command:
 
 streamlit run app.py
 
-#### 5. Open the App in Your Browser
+### 5. Open the App in Your Browser
 After running the above command, Streamlit will start a local server and provide a URL. Open the URL in your browser (default: http://localhost:8501).
 
