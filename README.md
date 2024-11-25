@@ -34,13 +34,13 @@ Spam-Message-Detector
 ### 1. Clone the Repository
 Clone the repository to your local machine:
 
-git clone <repository-url>
-cd Spam-Message-Detector
+    git clone <repository-url>
+    cd Spam-Message-Detector
 
 ### 2. Install Dependencies
 Install the required Python libraries:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ### 3. Train the Model
 If you'd like to retrain the model:
@@ -57,13 +57,31 @@ If you'd like to retrain the model:
 ### 4. Run the Streamlit App
 Run the Streamlit app with the following command:
 
-streamlit run app.py
+    streamlit run app.py
 
 ### 5. Open the App in Your Browser
 After running the above command, Streamlit will start a local server and provide a URL. Open the URL in your browser (default: http://localhost:8501).
 
 ## Using the App
-  #### 1.Input a Message: Enter the text message you want to classify in the input box.
-  #### 2.Get Prediction: Click the "Classify" button to see whether the message is spam or not spam.
-  #### 3.Real-Time Updates: Make changes or test multiple messages seamlessly.
+  #### * Input a Message: Enter the text message you want to classify in the input box.
+  #### * Get Prediction: Click the "Classify" button to see whether the message is spam or not spam.
+  #### * Real-Time Updates: Make changes or test multiple messages seamlessly.
+
+## Customization
+ #### * Modify the app.py file to customize the Streamlit interface.
+ #### * Use the notebooks/model_training.ipynb file to experiment with different models or datasets.
+
+## Example Workflow
+ #### * Train the model in Jupyter Notebook using a dataset of labeled spam and non-spam messages.
+ #### * Save the trained model to a .pkl file.
+ #### * Use Streamlit to load the model and provide a real-time interface for predictions.
+
+## Command Reference
+ #### 1.Run the app:   
+    streamlit run app.py
+ #### 2.Install dependencies:
+    pip install -r requirements.txt
+
+## Contributing
+   Feel free to submit issues or pull requests to improve the project!
 
