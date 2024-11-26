@@ -83,13 +83,13 @@ After running the above command, Streamlit will start a local server and provide
     pip install -r requirements.txt
 
 ## Screenshot
-  #### 1. This is the look of frontend Streamlit
+  ### 1. This is the look of frontend Streamlit
   ![Screenshot (205)](https://github.com/user-attachments/assets/c03b87ff-0f01-4a89-a526-69e3855eb2e2)
 
-  #### 2. Input of spam text as a paramter
+  ### 2. Input of spam text as a paramter
   ![Screenshot (207)](https://github.com/user-attachments/assets/296b13a7-8970-4e02-9b55-049a68632185)
 
-  #### 3. Final prediction
+  ### 3. Final prediction
   ![Screenshot (208)](https://github.com/user-attachments/assets/3ca2acf3-0587-4e79-a147-ada3f85d375f)
 
 ## Contributing
