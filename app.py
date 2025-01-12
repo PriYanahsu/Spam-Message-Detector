@@ -49,15 +49,16 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    input_sms = request.form['text']
+    input_sms = request.form['sms']  # Correct field name as 'sms'
     transform_sms = transform_text(input_sms)
     vector_input = tfidf.transform([transform_sms])
     result = model.predict(vector_input)[0]
     
     if result == 1:
-        return {'result': 'Spam'}
+        return render_template('home.html', result="Spam")  # Return the result to home.html
     else:
-        return {'result': 'Not Spam'}
+        return render_template('home.html', result="Not Spam")  # Return the result to home.html
+
 
 if __name__ == "__main__":
     app.run(debug=True)
