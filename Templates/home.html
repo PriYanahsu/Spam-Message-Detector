@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email/SMS Spam Classifier</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <!-- Navbar -->
@@ -23,32 +23,18 @@
     <div class="container">
         <h1>Email/SMS Spam Classifier</h1>
         <p>By Priyanshu</p>
-        <textarea id="input_sms" rows="4" cols="50" placeholder="Enter the message"></textarea>
-        <button id="predictBtn">Predict</button>
-        <div id="result"></div>
+        <form method="POST">
+            <textarea name="sms" rows="4" cols="50" placeholder="Enter the message"></textarea>
+            <button type="submit">Predict</button>
+        </form>
+        {% if result %}
+            <div id="result">{{ result }}</div>
+        {% endif %}
     </div>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Priyanshu | All Rights Reserved</p>
     </footer>
-
-    <!-- JS Script -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#predictBtn').click(function(){
-                var input_sms = $('#input_sms').val();
-                $.ajax({
-                    url: '/predict',
-                    method: 'POST',
-                    data: { text: input_sms },
-                    success: function(response) {
-                        $('#result').text(response.result);
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
