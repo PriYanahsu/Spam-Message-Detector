@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email/SMS Spam Classifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Spam Classifier</a>
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Email/SMS Spam Classifier</h1>
+        <p>By Priyanshu</p>
+        <textarea id="input_sms" rows="4" cols="50" placeholder="Enter the message"></textarea>
+        <button id="predictBtn">Predict</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Priyanshu | All Rights Reserved</p>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#predictBtn').click(function(){
+                var input_sms = $('#input_sms').val();
+                $.ajax({
+                    url: '/predict',
+                    method: 'POST',
+                    data: { text: input_sms },
+                    success: function(response) {
+                        $('#result').text(response.result);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
