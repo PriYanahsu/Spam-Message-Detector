@@ -14,6 +14,7 @@ nltk.download('stopwords')
 # Initialize the PorterStemmer
 ps = PorterStemmer()
 
+
 # Function to preprocess the input text
 def transform_text(text):
     text = text.lower()  # Convert to lowercase
