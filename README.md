@@ -70,7 +70,6 @@ After running the above command, Flask will start a local server and provide a U
 
 ## Screenshot
 ### 1. Login Page
-![Screenshot (1)](https://github.com/user-attachments/assets/559433ae-75f7-4510-a850-d874f453ec86)
 
 ### 2. Input Page
 Here you input the message you want to classify.
